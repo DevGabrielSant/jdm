@@ -1,2 +1,194 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+
+    <style type="text/css">
+     
+     body{
+        background-color: rgb(15, 15, 15);
+        background-image: url(https://i.pinimg.com/736x/c0/53/6a/c0536a55aeb65b1ff12be2f57d3f1321.jpg);
+        background-repeat:repeat-y;
+        background-position: 50% 10% ;
+        background-attachment:fixed;
+        background-position-y: -120px ;
+     }
+     .container{
+        padding: 10px;
+        position:fixed;
+        height: 550px;
+        width:300px;
+        top:50px; 
+        background-color: rgba(255, 255, 255, 0.362);
+        border-radius: 10px;
+        margin-left: 75%;
+        box-shadow: 4px 3px 1px 0px #ffffff60;
+        justify-content: right;
+    }
+    
+   
+   /*/////////////////////////////////////////////////////////////////*/
+     .cadastro input{
+        width:90%;
+        padding:8px 15px;   
+        display: inline-block;
+        border: 0px;
+        border-bottom: 2px solid black;
+        background: transparent;
+        outline: none;
+        min-width: 180px;
+        transition: all.3s ease-out;font-size: 16px;
+        border-radius: 0px;
+        
+    }
+    .cadastro{
+      position: relative;
+      padding-top: 13px;
+      margin-top:5%;
+      margin-bottom: 5%;
+      font-size: 20px;
+   }
+   .cadastro input:focus{
+      border-bottom: 2px solid #bf1b3e
+    
+   }
+   .cadastro label{
+      color: black;
+      pointer-events: none;
+      position: absolute ;
+      top:0;
+      left: 0;
+      margin-top: 1px;
+      transition: all .3s ease-out;
+      }
+   .cadastro input:focus+label{
+      font-size: 15px;
+      margin-top:-13px;
+      color: black;
+}
+
+   /*///////////////////////////////////////////////////////////////*/
+     .tabela{
+        background-size: 300px 600px;
+        background-image: url(https://i.pinimg.com/originals/6c/38/05/6c3805d29849f83d89e6370774eac2f7.jpg);
+        background-color:rgb(255, 255, 255);
+        color:rgb(255, 255, 255);
+        width: 300px;
+        height:550px;
+        border-radius:15px ;
+        margin: 10px 10px ;
+        text-align: justify;
+        word-spacing: 5px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-top: -225px;
+        position:fixed;
+        
+     }
+  
+     button{
+      background: transparent;
+      color:rgb(0, 0, 0);
+      width: 100px;
+      height:40px;
+      border-radius: 6px;
+      border: solid rgb(255, 102, 0);
+      font-weight:bold;
+      font-size: 15px;
+      transition: all .5s ease-out;
+      margin-left: 100px ;
+      
+     }
+     button:hover{
+        background-color: rgb(255, 102, 0);
+        
+        
+     }  
+     p{
+      text-align:justify ;
+      
+      }
+      h2{
+         font-size: 30px;
+      }
+
+      h3{
+         padding:15px;
+      }
+      .titulo{
+         color:white;
+         font-family: 'Times New Roman', Times, serif;
+         display: grid;
+         place-items: center;
+         margin-top: 160px;
+         font-size: 50px;
+         text-shadow: 4px 3px red;
+      }
+      input::placeholder{
+         color: rgb(48, 47, 47);
+      }
+      </style>
+      <h2 class=titulo > Incorp</h2>
+</head>
+
+<body>
+    
+      <div class='container'>
+         <h2 >Preencha com seus dados</h2>
+            <divclass class='card'>
+               <div class='cadastro'>
+                  <input type="text" id="email" value="" placeholder="Ex: JoaoSilva@gmail.com">
+                  <label for='email'>Email</label>
+               </div>
+            
+               <div class='cadastro'>
+                  <input type="password" id="senha" value="" placeholder="8 dígitos" >
+                  <label for='senha'>Senha</label>
+               </div>
+
+               <div class='cadastro'>
+                  
+                  <input type="password" id="senha2"  value=""placeholder="8 dígitos">
+                  <label for='senha2'>Confirme sua senha</label>
+               </div>
+
+               <div class='cadastro'>
+                 
+                  <input type="text"  id="idade" value="" maxlength="2" placeholder="Ex:43">
+                  <label for='idade'>Idade</label>
+               </div>
+
+               <div class='cadastro'>
+                  
+                  <input type="text"  id="cidade" value="" placeholder="Ex:Paraná/PR" >
+                  <label for='cidade'>Cidade</label>
+              </div>
+
+               <div class='cadastro'>
+               <button>Cadastrar</button>
+               </div>
+               <hr>
+      </div>        
+    
+
+    <br><div  class=tabela>
+      <h3 > Nossa hístoria</h3>
+       
+         <p style="padding: 15px;"> A JDM's iniciou sua jornada no ano de 2010, em uma oficina onde amigos
+         se encontravam para converser sobre seus carros. <br>Ao passar do tempo, esse grupo
+         de amigos cresceu desproporcionalmente, então, com o intuito de reunir os amantes e apaixonados por
+         carros e motores, foi fundada a Japanese Domestic Mortors, uma grande 
+         associação onde adquirimos e compartilhamos o conhecimento por automoveis.<br>
+          Atualmente, somos a maior comunidade do meio automotivo, realizando mais 
+         de 50 encontros por mês e fechando mais de 150 parcerias ao longo deste 
+      percurso.</p>
+    </div>
+   
+</body>
+</html>
+<style>
+
+</style>
